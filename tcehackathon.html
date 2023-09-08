@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCE Hackathon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family:'Rajdhani';
+            background-image: url('gg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(8, 20, 124);
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 84, 8, 0.5);
+            padding: 2rem;
+        }
+
+        nav a {
+            color: rgb(144, 251, 235);
+            text-decoration: rgb(63, 183, 153);
+            margin: 0 4rem;
+            padding: 2rem 0rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgb(167, 65, 183);
+            color: rgb(49, 7, 44);
+        }
+
+        .content {
+            text-align: center;
+            padding: 5rem;
+            align-content: center;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            align-items: center;
+        }
+
+        .section {
+            margin: 2rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(81, 197, 193, 0.5);
+        }
+        .centered-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 105vh; 
+    }
+    .process-step {
+        text-align: center;
+        width: 20%;
+        content: center;
+    }
+
+    .process-step img {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 1rem;
+        content: center;
+    }
+
+    .registration-form {
+            width: 60%; 
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 5px solid #d665c7;
+            background-color: #715a79;
+    }
+    .registration-form h3 {
+            text-align: center;
+        }
+
+        .registration-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .member-info {
+            width: 95%; 
+            padding: 1rem;
+            border: 2px solid #d4abcc;
+            background-color: #d7a4ca;
+        }
+        .faq {
+            width: 70%;
+            margin: 0rem auto;
+            height: 105vh;
+        }
+
+        .faq h3 {
+            text-align: center;
+        }
+
+        .faq-list {
+            list-style: none;
+            padding: 2 rem;
+        }
+
+        .faq-item {
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-question {
+            font-weight: bold;
+        }
+
+        .faq-answer {
+            margin-top: 0.2rem;
+            display: none;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+
+.social-icons {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #780968; 
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+h1 {
+    font-family: 'Courgette'; 
+    font-size: 36px; 
+    color: #333; 
+}
+h2 {
+    font-family: 'Ubuntu Mono'; 
+    font-size: 36px; 
+    color: #333; 
+}
+h3 {
+    font-family: 'Tahoma'; 
+    font-size: 27px; 
+    color: #333; 
+}
+
+
+p {
+    font-family: 'Arial '; 
+    font-size: 20px; 
+    color: #640886; 
+}
+
+
+nav a {
+    font-family: 'Arial '; 
+    font-size: 20px; 
+    color: #56e4e9; 
+}
+
+</style>
+
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const navLinks = document.querySelectorAll("nav a");
+          navLinks.forEach(link => {
+              link.addEventListener("click", event => {
+                  event.preventDefault();
+                  const targetId = link.getAttribute("href");
+                  const targetSection = document.querySelector(targetId);
+                  targetSection.scrollIntoView({ behavior: "smooth" });
+              });
+          });
+      });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1 style="color:rgb(243, 170, 170);"></h1style>TCE HACKATHON</h1>
+        <img src="hackathon.jpg" alt="Hackathon Logo" width="200" height="200">
+        
+
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#Process">Process</a>
+        <a href="#register">Register</a>
+        <a href="#faq">FAQ</a>
+    </nav>
+    <div id="about" class="content section">
+        <h2 style="color:rgb(117, 223, 122);">About Hackathon</h2>
+        <p style="color:rgb(231, 129, 219);">
+          A hackathon is an event where individuals or teams come together to collaboratively work on solving problems,
+          typically in the fields of technology, software development, and innovation. It's a fast-paced and intense competition
+          that encourages participants to brainstorm, design, and create functional prototypes or solutions within a limited
+          timeframe, usually ranging from a few hours to a few days.Hackathons have gained immense popularity in the tech and innovation 
+          communities,serving as a catalyst for rapid idea generation and development.They foster an environment of camaraderie, learning, 
+          and innovation, where participants can bring their ideas to life in a short span of time.</p>
+      </p>
+    </div>
+    <div id="Process" class="content section">
+        <h2 style="color:rgb(84, 214, 188);">Process</h2>
+       
+        <p style="color:rgb(117, 223, 122);"><strong>Step 1: Idea Generation</strong></p>
+        <img src="idea.jpg" alt="Step 1"width="300" height="300">
+        <p style="color:rgb(193, 118, 203);"style= "font-family:Helvetica">
+            Idea generation is the initial phase of the creative process where individuals or 
+            teams brainstorm and generate concepts, solutions, or concepts for a specific problem or project.
+             It involves exploring a wide range of possibilities and thinking outside the box. Common techniques for idea generation
+              include brainstorming sessions, mind mapping, SWOT analysis, and various creative thinking exercises. The goal is to
+               come up with innovative and feasible ideas 
+            that can be further developed into actionable plans or projects.</p>
+        
+            <p style="color:rgb(117, 223, 122);"><strong>Step 2: Team Formation</strong></p>
+        <img src="team1.jpg" alt="Step 2"width="300" height="300">
+        <p style="color:rgb(193, 118, 203);">Team formation is the process of assembling a group of individuals with the skills, expertise, and personalities that complement each other to achieve a common goal. When forming a team,
+             it's essential to consider each member's strengths and weaknesses, their roles and responsibilities, and how they will collaborate effectively. 
+             The team leader or project manager plays a crucial
+              role in defining objectives, assigning tasks, and fostering a collaborative and productive work environment. 
+            Effective team formation can significantly impact the success of a project or idea.</p>
+        
+            <p style="color:rgb(117, 223, 122);"><strong>Step 3: Prototyping</strong></p>
+        <img src="pro.jpg" alt="Step 3"width="300" height="300">
+        <p style="color:rgb(193, 118, 203);">Prototyping is the stage where a rough, preliminary model or version of an idea or product is created to test its functionality, feasibility, and design. The primary purpose of prototyping is to identify potential issues, gather feedback,
+             and refine the concept before investing significant time and resources into its full development. Prototypes can take various forms, including physical models, digital simulations,
+              or even concept sketches, depending on the nature of the idea. 
+            The feedback obtained during the prototyping phase helps in making necessary improvements and adjustments.</p>
+        <p style="color:rgb(117, 223, 122);"><strong>Step 4: Presentation</strong></p>
+        <img src="pres.jpg" alt="Step 4"width="300" height="300">
+        
+        <p style="color:rgb(193, 118, 203);">Presentation is the final step in bringing an idea or project to fruition and sharing it with stakeholders, 
+            decision-makers, or the intended audience. 
+            Effective presentation skills are crucial to convey the value and potential of the idea. The presentation concludes with a clear implementation plan, 
+            elucidating the steps and timeline required to transform the idea into reality. </p>
+    </div>
+</div>
+</div>
+</div>
+    <div id="register" class="content section">
+        <h2 style="color:rgb(84, 214, 188);">Register</h2>
+        <div class="centered-container">
+            <div class="registration-form">
+                <h3>Team Registration</h3>
+                <div class="registration-block">
+                    <div class="member-info">
+                        <h4>Team Leader</h4>
+                        <p>Name: <input type="text"id="name" required></p>
+                        <p>Email: <input type="email"id="email" required></p>
+                    </div>
+                    <div class="member-info">
+                        <h4>Team Member 2</h4>
+                        <p>Name: <input type="text"id="name" required></p>
+                        <p>Email: <input type="email" id="email"required></p>
+                    </div>
+                    <div class="member-info">
+                        <h4>Team Member 3</h4>
+                        <p>Name: <input type="text"id="name" required></p>
+                        <p>Email: <input type="email"id="email" required></p>
+                    </div>
+                </div>
+                <button type="submit">Register</button>
+            </div>
+        </div>
+    </div>
+    <div id="faq" class="content section">
+        <h2 style="color:rgb(84, 214, 188);">FAQ</h2>
+        <div class="centered-container">
+            <div class="faq">
+                <h3 style="color:rgb(215, 89, 89);">Frequently Asked Questions</h3>
+                <ul class="faq-list">
+                    <li class="faq-item">
+                        <p style="color:rgb(224, 73, 201);"class="faq-question">Q: What is a hackathon?</p>
+                        <p style="color:rgb(243, 170, 170);"class="faq-answer">A: A hackathon is an event where individuals or teams come together to collaboratively work on solving problems, typically in the fields of technology, software development, and innovation.</p>
+                    </li>
+                    <li class="faq-item">
+                        <p style="color:rgb(224, 73, 201);" class="faq-question">Q: How do I register for the hackathon?</p>
+                        <p style="color:rgb(243, 170, 170);"class="faq-answer">A: You can register by visiting the registration page on our website and filling out the registration form.</p>
+                    </li>
+            
+                </ul>
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const faqItems = document.querySelectorAll(".faq-item");
+        
+                    faqItems.forEach(item => {
+                        item.addEventListener("click", () => {
+                            item.classList.toggle("active");
+                        });
+                    });
+                });
+            </script>
+        </div>
+    </div>
+    </div>
+    <footer>
+        &copy; 2023 TCE Hackathon. All rights reserved.
+    </footer>
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
